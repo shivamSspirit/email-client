@@ -1,0 +1,73 @@
+@import url(../../assets/theme.css);
+
+.email-body-container{
+    height: 100vh; 
+}
+
+.email-body-box{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1.3px solid var(--border);
+    height: 85%;
+}
+
+.email-body-icon{
+   display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--assent-color);
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.email-body-side{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.subandmark{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-body-subject{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.fav-buttton{
+    width: 130px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding: .5rem;
+    border-radius: 16px;
+    background-color: var(--assent-color);
+    border: none;
+    cursor: pointer;
+}
+
+.body-date-time-item{
+    color: var(--text);
+    margin: 0;
+}
+
+.body-description{
+    font-size: 14px;
+    color: var(--text);
+    margin: 0;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}

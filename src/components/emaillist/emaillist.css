@@ -1,0 +1,18 @@
+@import url(../../assets/theme.css);
+
+/* .Email-list-container {
+   
+} */
+
+.Email-list {
+  display: flex; 
+  flex-direction: column; 
+  gap: 1rem;
+}
+
+.error-title{
+  text-align: center;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 550;
+}

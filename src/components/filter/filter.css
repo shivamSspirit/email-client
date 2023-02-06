@@ -1,0 +1,44 @@
+@import url(../../assets/theme.css);
+
+.filter-container {
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.filter-types {
+    color: black;
+    font-size: 16px;
+}
+
+.filter-type {
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80px;
+    text-align: center;
+    padding: .2rem;
+}
+
+
+
+.active-filter {
+    background-color: var(--filter-button);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.back-sider {
+    margin-left: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.back {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+@import url(../../assets/theme.css);
+
+.paginate-block {
+    width: 100%;
+    display: flex;
+}
+
+.pagination-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.page-list {
+    list-style: none;
+}
+
+.page-btn {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .5rem;
+    font-size: 17px;
+    font-weight: 550;
+    width: 40px;
+    cursor: pointer;
+}
+
+.activepage{
+    background-color: var(--assent-color);
+    color: white;
+}

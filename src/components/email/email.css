@@ -1,0 +1,96 @@
+@import url(../../assets/theme.css);
+
+.single-email-box{
+    width: 100%;
+}
+
+/* read unread style */
+
+.single-email-items{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1.3px solid var(--border);
+    cursor: pointer;
+}
+
+.active-email{
+    border: 1.3px solid var(--assent-color);
+}
+
+.readed-style{
+    background-color: var(--read-background);
+}
+
+
+.roundes{
+    width: 50px;
+    height: min-content;
+}
+
+.rounded-letter{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--assent-color);
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-side-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-item{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    line-height: 23px;
+}
+
+.email-title{
+    font-size: 15px;
+    color: var(--text);
+    margin: 0;
+}
+
+.email-item{
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 550;
+    margin: 0;
+}
+
+.description{
+    margin: 0;
+    line-height: 25px;
+    color: var(--text);
+    text-overflow: ellipsis;
+}
+
+.date-item{
+    color: var(--text);
+}
+
+.time-item{
+    color: var(--text);
+    font-size: 15px;
+}
+
+.fav{
+    color: var(--assent-color);
+    font-weight: 550;
+    font-size: 14px;
+    margin-left: 2rem;
+}
+
+
+
