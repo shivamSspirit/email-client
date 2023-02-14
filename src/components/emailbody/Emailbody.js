@@ -7,12 +7,16 @@ import { removehtmltag } from '../../utils';
 
 function Emailbody() {
   const { convertodate, convertotime } = useDateTime();
-  const { currentopenedemail, singleemail, allemails } = useSelector(state => state?.emails)
+  const { currentopenedemail, singleemail, allemails,favoriteemails } = useSelector(state => state?.emails)
   const dispatch = useDispatch();
 
   const setFavorite = (emailid) => {
     const currentmail = allemails.find((email => email.id === emailid))
     dispatch(emailActions?.setFavoriteemail(currentmail))
+  }
+
+  const setunFavorite=(emailid)=>{
+   dispatch(emailActions?.setUnFavoriteemail(emailid))
   }
 
   return (
@@ -24,7 +28,7 @@ function Emailbody() {
         <div className='email-body-side'>
           <div className='subandmark'>
             <span className='email-body-subject'>{currentopenedemail?.data?.subject}</span>
-            <button className='fav-buttton' onClick={() => setFavorite(currentopenedemail?.id)}>Mark as favorite</button>
+            {favoriteemails?.find(email=>email.id===currentopenedemail.id)?<button className='fav-buttton' onClick={() => setunFavorite(currentopenedemail?.id)}>Unfavorite</button>:<button className='fav-buttton' onClick={() => setFavorite(currentopenedemail?.id)}>Mark as favorite</button>}
           </div>
           <span>
             <span className='body-date-time-item'>{convertodate(currentopenedemail?.data?.date)}</span> <span className='body-date-time-item'>{convertotime(currentopenedemail?.data?.date)}</span>

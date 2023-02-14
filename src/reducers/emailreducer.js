@@ -60,6 +60,14 @@ export function emailReducer(state, action) {
 
         }
 
+        case actionTypes.UNFAVORITE_EMAIL: {
+            const removefromfavorite = state?.favoriteemails?.filter(email => email.id !== action.payload)
+            return {
+                ...state,
+                favoriteemails: removefromfavorite
+            }
+        }
+
         case actionTypes.READED_EMAIL: {
             if (state?.readedemails?.length > 0) {
                 if (state.readedemails.includes(action.payload)) {

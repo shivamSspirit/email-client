@@ -55,6 +55,10 @@ export function setFavoriteemail(data) {
     return { type: actionTypes.FAVORITE_EMAIL, payload: data }
 }
 
+export function setUnFavoriteemail(data) {
+    return { type: actionTypes.UNFAVORITE_EMAIL, payload: data }
+}
+
 export function resetFilters() {
     return { type: actionTypes.RESET_FILTERTYPE, payload: "" }
 }
